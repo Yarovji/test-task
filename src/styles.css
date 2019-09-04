@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.div-main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "a";
+}
+
+.main-content {
+  margin: 40px;
+  color: white;
+  grid-area: a;
+  justify-self: left;
+}
+
+.square-with-buttons {
+  border: 2px solid lightgreen;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+
+.square-with-buttons button {
+  background-color: black;
+  color: lightgreen;
+  border: none;
+  margin: 5px;
+}
+
+.square-with-buttons button:hover {
+  color: green;
+}

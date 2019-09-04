@@ -1,0 +1,14 @@
+<div class="div-main-container">
+  <div class="main-content">
+    <form #f="ngForm" (submit)="addNewUser(f.value); inputName.value='';">
+      <input type="text" ngModel name="name" placeholder="Введіть ім'я" #inputName>
+      <button>Додати</button>
+    </form>
+    <p *ngIf="resoultOfAdding">{{resoultOfAdding}}</p>
+  </div>
+
+  <div class="square-with-buttons">
+    <button routerLink="/page-three">Назад</button>
+    <button routerLink="/page-two">Вперед</button>
+  </div>
+</div>

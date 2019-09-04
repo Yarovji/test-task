@@ -1,0 +1,11 @@
+<div class="div-main-container">
+  <ol class="main-content">
+    <li *ngFor="let user of users">
+      {{user.name}}
+    </li>
+  </ol>
+  <div class="square-with-buttons">
+    <button routerLink="/page-one">Назад</button>
+    <button routerLink="/page-three">Вперед</button>
+  </div>
+</div>
